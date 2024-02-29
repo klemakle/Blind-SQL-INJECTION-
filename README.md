@@ -1,11 +1,11 @@
 # SQL INJECTION - Blind
 
-Il s'agit d'utiliser la vulnérabilité "sql injection" pour récupérer des données de la base de données. Tout cela, de façon "aveugle".
+Il s'agit d'utiliser la vulnérabilité "sql injection" pour récupérer des informations de la base de données. Tout cela, de façon "aveugle".
 
 ### I . Contexte 
 ________________________________________________________________
 
-Nous avons un site présentant de nombreuses vulnérabilités, qui sert d'environnement de tests et d'exploitation de ces vulnérabilités.
+Nous avons un site présentant de nombreuses vulnérabilités. Ce site sert d'environnement de tests et d'exploitation de ces vulnérabilités.
 Dans cette partie nous exploitons la vulnérabilité de type SQL INJECTION (blind). 
 - Sur l'image ci-dessous, nous voyons le retour du serveur quand nous mettons un entier. Le serveur nous répond que l'utilisateur avec l'ID "2" existe dans la base de données et rien d'autre.
 <img src="captures/user2.png" />
