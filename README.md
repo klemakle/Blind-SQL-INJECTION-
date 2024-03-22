@@ -11,14 +11,17 @@ Il s'agit d'utiliser la vulnérabilité "sql injection" pour récupérer des inf
 Nous avons un site présentant de nombreuses vulnérabilités. Ce site sert d'environnement de tests et d'exploitation de ces vulnérabilités.
 Dans cette partie nous exploitons la vulnérabilité de type **SQL INJECTION (blind)**. 
 - Sur l'image ci-dessous, nous voyons le retour du serveur quand nous donnons en entrée un entier. Le serveur nous répond que l'utilisateur avec l'ID "2" existe dans la base de données et rien d'autre.
-![alt text](captures/user2.png)
+    
+    ![alt text](captures/user2.png)
 
 - Quand nous mettons une valeur erronée ('coucou' par exemple), le serveur nous répond que l'utilisateur n'existe pas dans la base de données.
-![alt text](captures/coucou.png)
+  
+    ![alt text](captures/coucou.png)
 
 - Maintenant lorque nous testons l'injection sql en mettant
   ``` coucou' OR 1=1 -- - ```, le serveur nous répond que l'utilisateur existe dans la base de données. **Ce qui est anormal.**
-![alt text](captures/coucouOR.png)
+
+    ![alt text](captures/coucouOR.png)
 
 
 ## B. Déduction
